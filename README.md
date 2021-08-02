@@ -1,9 +1,38 @@
 # RPS Challenge
+To clone the project:
+```
+git clone git@github.com:grantwhiteman/rock-papers-scissors-challenge.git
+```
+Install dependences:
+```
+npm install
+```
+To start the project:
+```
+npm start
+```
+To run the Jasmine tests:
+```
+npm test
+```
+To run the Cypress tests:
+```
+npx cypress open
+```
 
+## Learnings
+The project was to make a rock paper scissors game using express and ejs in node JS. I wrote an initial jasmine and cypress test to drive the project. I then made the source file to pass the jasmine test and added more jasmine tests. Then I added the index.js, views and routers and passed the first jasmine test and added more tests.
 
+The longest blocker I had was trying to work out why the view '/play' wasnt being found, the view should have just been 'play'
 
+The experience in modularising routers was very useful, and I was able to do this without any problem. I loaded the index with a get request, then posted the name to the second page where I stored the name in app.locals which was useful for reloading the same page at the end of the game with just a get request. I used the redirect method to modularise this router further.
 
+The final page had a post request which came from my first time using a drop down menu, this made the most sense as it was the easiest way to send the data across. I would have liked separate buttons for each weapon, but I was unsure how to do this.
 
+I think the code is quite well optimised, my function could be cleaner but it does the job well and would be easy to change and shouldn't be too hard for someone else to understand, even though it isn't as immediate obvious as saying 
+```
+if (weapon === 'rock' && computerWeapon === 'paper') ...
+```
 
 Instructions
 -------

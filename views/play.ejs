@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <h1 id="heading">Welcome, <%= name %></h1>
+    <form action="/end" method="POST">
+        <select name="weapons" id="weapons">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <input id="weapon-submit" type="submit" value="Submit!">
+    </form>
+</body>
+
+</html>
